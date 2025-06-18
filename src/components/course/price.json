@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_course_prices",
+  "info": {
+    "displayName": "Price",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "offer_price": {
+      "type": "integer"
+    },
+    "display_price": {
+      "type": "integer"
+    },
+    "show_offer_price": {
+      "type": "boolean"
+    },
+    "offer_end_date": {
+      "type": "datetime"
+    },
+    "material_kit_price": {
+      "type": "integer"
+    }
+  }
+}

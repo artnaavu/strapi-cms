@@ -1,0 +1,69 @@
+{
+  "kind": "collectionType",
+  "collectionName": "artists",
+  "info": {
+    "singularName": "artist",
+    "pluralName": "artists",
+    "displayName": "Artist",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "profile_picture": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "years_of_experience": {
+      "type": "integer"
+    },
+    "location": {
+      "type": "string"
+    },
+    "art_categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::art-category.art-category",
+      "mappedBy": "artists"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "profile_picture_large": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "name_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "students_taught": {
+      "type": "string"
+    }
+  }
+}

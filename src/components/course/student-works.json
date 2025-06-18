@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_course_student_works",
+  "info": {
+    "displayName": "Student Works"
+  },
+  "options": {},
+  "attributes": {
+    "project_image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "student_name": {
+      "type": "string"
+    },
+    "student_image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "testimonial": {
+      "type": "text"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_course_variants",
+  "info": {
+    "displayName": "Variants",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "price": {
+      "type": "integer"
+    },
+    "compare_at_price": {
+      "type": "integer"
+    },
+    "has_materials": {
+      "type": "boolean"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

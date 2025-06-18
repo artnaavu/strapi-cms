@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_course_completed_arts",
+  "info": {
+    "displayName": "completed_art"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "asset": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

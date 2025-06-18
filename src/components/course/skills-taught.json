@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_course_skills_taughts",
+  "info": {
+    "displayName": "Skills Taught",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "skills": {
+      "displayName": "Skill Name",
+      "type": "component",
+      "repeatable": true,
+      "component": "course.skill-name"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

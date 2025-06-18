@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_course_materials",
+  "info": {
+    "displayName": "materials"
+  },
+  "options": {},
+  "attributes": {
+    "has_materials": {
+      "type": "boolean"
+    },
+    "description": {
+      "type": "richtext"
+    }
+  }
+}

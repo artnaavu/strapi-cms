@@ -1,0 +1,137 @@
+{
+  "kind": "collectionType",
+  "collectionName": "courses",
+  "info": {
+    "singularName": "course",
+    "pluralName": "courses",
+    "displayName": "Course",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "banner": {
+      "displayName": "Banner",
+      "type": "component",
+      "repeatable": false,
+      "component": "course.banner"
+    },
+    "is_active": {
+      "type": "boolean",
+      "default": true
+    },
+    "art_category": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::art-category.art-category"
+    },
+    "artist": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::artist.artist"
+    },
+    "chapters": {
+      "displayName": "Chapters",
+      "type": "component",
+      "repeatable": true,
+      "component": "course.chapters"
+    },
+    "description_details": {
+      "displayName": "Description Details",
+      "type": "component",
+      "repeatable": true,
+      "component": "course.description-details"
+    },
+    "artist_details": {
+      "displayName": "Artist Details",
+      "type": "component",
+      "repeatable": false,
+      "component": "course.artist-details"
+    },
+    "skills_taught": {
+      "displayName": "Skills Taught",
+      "type": "component",
+      "repeatable": false,
+      "component": "course.skills-taught"
+    },
+    "faqs": {
+      "displayName": "FAQs",
+      "type": "component",
+      "repeatable": true,
+      "component": "course.fa-qs"
+    },
+    "student_works": {
+      "displayName": "Student Works",
+      "type": "component",
+      "repeatable": true,
+      "component": "course.student-works"
+    },
+    "is_sold_out": {
+      "type": "boolean",
+      "default": false
+    },
+    "slug": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "meta_details": {
+      "displayName": "Meta Details",
+      "type": "component",
+      "repeatable": false,
+      "component": "course.meta-details"
+    },
+    "skill_level_title": {
+      "type": "string"
+    },
+    "trailer_video": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "art_description": {
+      "type": "string"
+    },
+    "language": {
+      "type": "string"
+    },
+    "materials": {
+      "displayName": "materials",
+      "type": "component",
+      "repeatable": false,
+      "component": "course.materials"
+    },
+    "completed_art": {
+      "displayName": "completed_art",
+      "type": "component",
+      "repeatable": true,
+      "component": "course.completed-art"
+    },
+    "skill_level": {
+      "type": "enumeration",
+      "enum": [
+        "beginner",
+        "intermediate",
+        "advanced",
+        "beginner-intermediate",
+        "intermediate-advanced"
+      ]
+    },
+    "variants": {
+      "displayName": "Variants",
+      "type": "component",
+      "repeatable": true,
+      "component": "course.variants"
+    }
+  }
+}

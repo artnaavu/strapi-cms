@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "art_categories",
+  "info": {
+    "singularName": "art-category",
+    "pluralName": "art-categories",
+    "displayName": "Art Category",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "category_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "artists": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::artist.artist",
+      "inversedBy": "art_categories"
+    }
+  }
+}
